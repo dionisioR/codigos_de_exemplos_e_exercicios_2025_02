@@ -12,4 +12,5 @@ document.getElementById('resultado').innerHTML = `
         <strong>Área: </strong> ${area.toFixed(3)}. <br>
         <strong>Volume: </strong> ${volume.toFixed(3)}. <br>
     </p>
+    
 `
