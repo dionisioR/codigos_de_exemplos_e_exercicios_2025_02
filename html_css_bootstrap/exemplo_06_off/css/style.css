@@ -1,0 +1,20 @@
+.logo{
+    width: 56px;
+    border-radius: 50%;
+}
+.sec_01{
+    background-image: url('../img/background_image_03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-title{
+    background-color:rgba(251, 227, 241, 0.66);
+    padding:20px 25px;
+    border-left: 5px solid rgb(233, 12, 141);
+}
+
+.bg-beige{
+    background-color:rgba(251, 227, 241, 0.66);
+}
