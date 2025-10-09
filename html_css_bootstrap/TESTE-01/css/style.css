@@ -1,0 +1,49 @@
+
+.bg-main{
+    background-image: url('../img/background_image_03.jpg');
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg-newsletter{
+    background-image: url('../img/background_image_02.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg-beige{
+    background-color: #fbe3f1;
+}
+.bg-title{
+    background-color:rgba(251, 227, 241, 0.66);
+    padding:20px 25px;
+    border-left: 5px solid rgb(233, 12, 141);
+}
+
+.bg-grid-beige{
+    background-color:rgba(251, 227, 241, 0.66);
+    padding:20px 25px;
+}
+
+/* Chrome, Firefox, Opera, Safari */
+input::placeholder {
+    color:  rgb(233, 12, 141);;
+  }
+  
+  /* Internet Explorer 10-11 */
+  input:-ms-input-placeholder {
+    color:  rgb(233, 12, 141);;
+  }
+  
+  /* Microsoft Edge (antigo, antes do Chromium) */
+  input::-ms-input-placeholder {
+    color:  rgb(233, 12, 141);;
+  }
+  
+  .nav-logo{
+    width:62px;
+    border-radius: 50%;
+  }

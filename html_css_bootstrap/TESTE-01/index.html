@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary py-2" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/gata01.JPG" class="nav-logo" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="bi bi-star-fill"></i> Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                > <i class="bi bi-star-fill"></i> Loja virtual</a></a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-primary" href="#"><i class="bi bi-star-fill"></i> Carros</a>
+                <a class="dropdown-item text-primary" href="#"><i class="bi bi-star-fill"></i>  Motos</a>
+                <a class="dropdown-item text-primary" href="#"><i class="bi bi-star-fill"></i> Esportivos</a>
+                <a class="dropdown-item text-primary" href="#"><i class="bi bi-star-fill"></i> Utilitários</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"> <i class="bi bi-star-fill"></i> Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"> <i class="bi bi-star-fill"></i> Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <i class="bi bi-star-fill"></i> FAQ</a>
+            </li>
+         
+
+            
+
+
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-sm-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              Pesquisar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <header class="bg-beige pb-5">
+      <div class="container">
+        <figure
+          class="text-center py-5"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <img src="img/logo03.png" alt="Logo" class="w-25" />
+        </figure>
+
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carousel01.gif" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel02.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel03.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-main">
+      <!-- section produtos start -->
+      <section class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1
+              class="text-primary mt-5 bg-title"
+              data-aos="fade-left"
+              data-aos-offset="500"
+              data-aos-duration="500"
+            >
+              Nossos Produtos
+            </h1>
+
+            <div class="row mt-4">
+              <div class="col-12 col-md-4">
+                <div
+                  class="bg-grid-beige"
+                  data-aos="fade-up"
+                  data-aos-offset="500"
+                  data-aos-duration="500"
+                >
+                  <h2 class="text-primary">Produtos</h2>
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-right"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/carro04.JPG"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/carro05.JPG"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-up"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/carro06.JPG"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-right"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/carro07.JPG"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/moto05.JPG"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-up"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/moto04.JPG"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+
+                  <!-- produtos start -->
+                  <div
+                    class="row mt-3"
+                    data-aos="fade-up"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                  >
+                    <div class="col-3">
+                      <figure>
+                        <img
+                          src="img/rosa01.jpg"
+                          alt="carro"
+                          class="w-100 rounded-circle"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-9">
+                      <p class="text-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, dignissimos.
+                        <strong>
+                          <a href="#" class="text-primary">
+                            Saiba mais...
+                          </a></strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- produtos end -->
+                </div>
+              </div>
+
+              <div class="col-12 col-md-8">
+                <div
+                  class="bg-grid-beige"
+                  data-aos="fade-up"
+                  data-aos-offset="500"
+                  data-aos-duration="500"
+                >
+                  <h2 class="text-primary">Ultimos lançamentos! Confira...!</h2>
+                </div>
+
+                <!-- -------------------------------------------- -->
+                <div class="row">
+                  <div class="col-6 col-md-4 my-3">
+                    <!-- card - start -->
+                    <div
+                      class="card"
+                      data-aos="fade-up"
+                      data-aos-offset="500"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="img/moto03.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="text-primary h3">Moto</h5>
+                        <p class="text-primary">
+                          Some quick example text to build on the moto and make
+                          up the bulk of the card’s content.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-primary">Detalhes</a>
+                      </div>
+                    </div>
+                    <!-- card - end -->
+                  </div>
+
+                  <div class="col-6 col-md-4 my-3">
+                    <!-- card - start -->
+                    <div
+                      class="card"
+                      data-aos="fade-left"
+                      data-aos-offset="500"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="img/moto01.JPG"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="text-primary h3">Moto</h5>
+                        <p class="text-primary">
+                          Some quick example text to build on the moto and make
+                          up the bulk of the card’s content.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-primary">Detalhes</a>
+                      </div>
+                    </div>
+                    <!-- card - end -->
+                  </div>
+
+                  <div class="col-6 col-md-4 my-3">
+                    <!-- card - start -->
+                    <div
+                      class="card"
+                      data-aos="fade-down"
+                      data-aos-offset="500"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="img/moto02.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="text-primary h3">Moto</h5>
+                        <p class="text-primary">
+                          Some quick example text to build on the moto and make
+                          up the bulk of the card’s content.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-primary">Detalhes</a>
+                      </div>
+                    </div>
+                    <!-- card - end -->
+                  </div>
+                </div>
+                <!-- -------------------------------------------- -->
+
+                <!-- -------------------------------------------- -->
+                <div class="row">
+                  <div class="col-6 col-md-4 my-3">
+                    <!-- card - start -->
+                    <div
+                      class="card"
+                      data-aos="fade-left"
+                      data-aos-offset="500"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="img/carro01.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="text-primary h3">Carro</h5>
+                        <p class="text-primary">
+                          Some quick example text to build on the Carro and make
+                          up the bulk of the card’s content.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-primary">Detalhes</a>
+                      </div>
+                    </div>
+                    <!-- card - end -->
+                  </div>
+
+                  <div class="col-6 col-md-4 my-3">
+                    <!-- card - start -->
+                    <div
+                      class="card"
+                      data-aos="fade-down"
+                      data-aos-offset="500"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="img/carro02.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="text-primary h3">Carro</h5>
+                        <p class="text-primary">
+                          Some quick example text to build on the Carro and make
+                          up the bulk of the card’s content.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-primary">Detalhes</a>
+                      </div>
+                    </div>
+                    <!-- card - end -->
+                  </div>
+
+                  <div class="col-6 col-md-4 my-3">
+                    <!-- card - start -->
+                    <div
+                      class="card"
+                      data-aos="fade-up"
+                      data-aos-offset="500"
+                      data-aos-duration="500"
+                    >
+                      <img
+                        src="img/carro03.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="text-primary h3">Carro</h5>
+                        <p class="text-primary">
+                          Some quick example text to build on the Carro and make
+                          up the bulk of the card’s content.
+                        </p>
+                        <a href="#" class="btn btn-sm btn-primary">Detalhes</a>
+                      </div>
+                    </div>
+                    <!-- card - end -->
+                  </div>
+                </div>
+                <!-- -------------------------------------------- -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section produtos end -->
+
+      <!-- section newsletter  start -->
+      <section class="bg-newsletter">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-12 bg-title">
+              <h2 class="text-primary h1 text-center">Nossa Newsletter</h2>
+              <p class="text-primary h6 text-center">
+                Inscreva-se para receber as melhores ofertas e novidades.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <label
+                    class="col-form-label fw-bold text-primary mt-4"
+                    for="inputDefault"
+                    >Digite seu nome</label
+                  >
+                  <input type="text" class="form-control border-primary" />
+                </div>
+
+                <div class="col-6">
+                  <label
+                    class="col-form-label fw-bold text-primary mt-4"
+                    for="inputDefault"
+                    >Digite seu nmelhore email</label
+                  >
+                  <input type="text" class="form-control border-primary" />
+                </div>
+                <div class="col-12 my-3 text-center">
+                  <a href="#" class="btn btn-primary w-50">Cadastrar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section newsletter  end -->
+    </main>
+
+    <footer class="bg-primary py-5">
+      <div class="container text-center">
+        <h2>Nos siga nas redes sociais</h2>
+        <div>
+          <i class="mx-1 fs-1 bi bi-instagram"></i>
+          <i class="mx-1 fs-1 bi bi-facebook"></i>
+          <i class="mx-1 fs-1 bi bi-tiktok"></i>
+          <i class="mx-1 fs-1 bi bi-twitter-x"></i>
+          <i class="mx-1 fs-1 bi bi-youtube"></i>
+          <i class="mx-1 fs-1 bi bi-whatsapp"></i>
+          <i class="mx-1 fs-1 bi bi-linkedin"></i>
+        </div>
+        <div>
+          <p class="text-white">© 2025 Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- offcanvas start -->
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">FAQ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <p>Perguntas e respostas mais frequentes.</p>
+        </div>
+       
+        <!-- accordion start -->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Pergunta 01
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Pergunta 02
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Pergunta 03
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- accordion end -->
+
+
+
+      </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
