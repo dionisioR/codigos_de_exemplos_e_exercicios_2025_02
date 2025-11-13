@@ -1,0 +1,21 @@
+header{
+    /* border: 1px solid red; */
+    min-height: 70vh;
+
+    background-image: url("https://picsum.photos/1200/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* text-shadow: 2px 2px 2px rgb(224, 224, 213); */
+}
+h1, h2{
+     text-shadow: 2px 2px 2px rgb(224, 224, 213);
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.p-100{
+    font-weight: 300;
+}

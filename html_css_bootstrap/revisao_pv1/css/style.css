@@ -1,0 +1,42 @@
+
+:root{
+    --cor1: #8D7B68;
+    --cor2: #A4907C;
+    --cor3: #C8B6A6;
+    --cor4: #eee9e2fe;
+    --cor5: #fff;
+    --cor6: #000;
+}
+
+header{
+    border: 1px solid red;
+    height: 60vh;
+    background-image: url('https://picsum.photos/1200/400');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    font-size: 52px;
+    color: var(--cor1);
+    text-shadow: 2px 2px 3px var(--cor5);
+    font-weight: 500;
+}
+.logo{
+    width: 62px;
+    border-radius: 50%;
+}
+
+.menu{
+    background-color: var(--cor2);
+}
+
+.bnt-prova{
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+.bnt-prova:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+}

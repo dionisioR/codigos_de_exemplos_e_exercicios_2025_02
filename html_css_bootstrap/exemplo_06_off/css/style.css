@@ -9,6 +9,13 @@
     background-attachment: fixed;
 }
 
+.sec_02{
+    background-image: url('../img/background_image_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .bg-title{
     background-color:rgba(251, 227, 241, 0.66);
     padding:20px 25px;
